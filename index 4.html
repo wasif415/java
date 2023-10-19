@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student data</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-image: url(https://media.istockphoto.com/id/1285308242/photo/to-do-list-text-on-notepad.jpg?s=2048x2048&w=is&k=20&c=d8P7XIm8o3NGPui4qExcCUF1GwbhzTGfD8jEjiezj_M=);
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+
+        }
+
+        form {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        button {
+            margin: 5px;
+            padding: 8px;
+            width: 150px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            background-color: seashell;
+        }
+
+        table {
+            border-radius: 50px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border-radius: 50px;
+            background-color: transparent;
+            backdrop-filter: blur(2px);
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: aqua;
+            backdrop-filter: blur(2px);
+        }
+
+        button {
+            background-color: red;
+            backdrop-filter: blur(1px);
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: orange;
+            backdrop-filter: blur(8px);
+            transition-duration: 1s;
+        }
+
+        .delete-button {
+            background-color: #ff5555;
+        }
+
+        .delete-button:hover {
+            background-color:transparent ;
+        }
+    </style>
+   <script src="dom.js">
+</script>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="fatherName" placeholder="Father's Name">
+        <input type="number" id="score" placeholder="Score">
+        <button type="button" onclick="addToTable()">Add</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Score</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table content will be added here -->
+        </tbody>
+    </table>
+    <tbody id="tableBody">
+        <!-- Table content will be added here -->
+        
+    </body>
+</body>
+</html>
