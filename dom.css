@@ -1,0 +1,17 @@
+.test-div{
+    display: flex;
+    background-color: red;
+    border-radius: 5;
+    width: 200px;
+}
+
+.test-div-tittle{
+    color: yellow;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+    width: 60%;
+}
+.test-div-button{
+    color: black;
+}
